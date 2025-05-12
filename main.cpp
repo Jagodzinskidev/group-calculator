@@ -23,14 +23,17 @@ int main(int argc, char* argv[]) {
             result = number1 + number2;
             printf("%d + %d = %d\n", number1, number2, result);
             return 0;
-        }else if (!strcmp("/", argv[2]) == 0) {
+        }
+        if (!strcmp("div", argv[2])) {
             if(number2 == 0) {
                 printf("Nie mozna dzielic przez 0!!!");
                 exit(1);
-            }else {
+            }
+            else {
                 float result_of_dividing;
                 result_of_dividing = (float)number1 / (float)number2;
                 printf("%d / %d = %f\n",number1,number2,result_of_dividing);
+                return 0;
             }
         }
         if (!strcmp("mul", argv[2])) {
