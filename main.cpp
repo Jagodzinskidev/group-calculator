@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <cmath>
 
 void usage(char *programName) {
     printf("Usage: %s number1 operation number\n", programName);
@@ -38,7 +39,7 @@ int main(int argc, char* argv[]) {
             return 0;
         }
         if (!strcmp("poweroff", argv[2])) {
-            result = pow(number1, numer2);
+            result = pow(number1, number2);
             printf("%d ^ %d = %d\n", number1, number2, result);
             return 0;
         }
